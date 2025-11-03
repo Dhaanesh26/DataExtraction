@@ -2,9 +2,7 @@
 
 <br />
 <div align="center">
-
   <h3 align="center">DataExtraction</h3>
-
   <p align="center">
     Automated ETL pipelines for extracting data from MySQL databases and REST APIs using Python.
     <br />
