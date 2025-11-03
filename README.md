@@ -1,16 +1,6 @@
 <!-- Improved compatibility of back to top link -->
 <a id="readme-top"></a>
 
-<!-- PROJECT SHIELDS -->
-[![Python][python-shield]][python-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-[![Last Commit][last-commit-shield]][last-commit-url]
-[![Workflow][workflow-shield]][workflow-url]
-
 <br />
 <div align="center">
 
@@ -56,8 +46,8 @@
 
 This project provides scalable data extraction from:
 
-✅ MySQL Database  
-✅ REST API Endpoints
+1. MySQL Database  
+2. REST API Endpoints
 
 Extracted data is validated and saved in the `output/` directory as CSV/JSON.
 
@@ -113,19 +103,71 @@ Extracted data is validated and saved in the `output/` directory as CSV/JSON.
 ```sh
 pip install -r requirements.txt
 
+Clone project
 
 git clone https://github.com/Dhaanesh26/DataExtraction.git
 cd DataExtraction
 
+Update configurations
+
 config/database_config.yaml
 config/api_config.yaml
 
+Run MySQL extraction:
+
 python3 src/mysql_extractor.py
 
+Run API extraction:
+
 python3 src/api_extractor.py
+
+Usage
 
 output/mysql/
 output/api/
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> <!-- INCREMENTAL LOAD SUPPORT -->
+Logs are saved under:
+
+logs/data_extraction.log
+
+Configurable via:
+
+config/incremental_config.yaml
+
+Docker setup:
+
+docker-compose up -d
+
+Roadmap
+
+- MySQL Extraction
+
+- REST API Extraction
+
+- Docker MySQL Support
+
+- Incremental Data Warehouse Load
+
+- Airflow Orchestration
+
+- Unit Testing + CI/CD Integration
+
+Contact
+
+Dhaanesh
+📩 Email: (add your email here)
+🔗 LinkedIn: https://linkedin.com/in/dhaanesh-s
+
+Repo Link: https://github.com/Dhaanesh26/DataExtraction
+
+Acknowledgments
+
+Python Docs
+
+MySQL Docs
+
+Requests Library Docs
+
+Shields.io
+
 
